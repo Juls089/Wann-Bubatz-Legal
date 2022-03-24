@@ -1,7 +1,14 @@
 <!-- Display the countdown timer in an element -->
 <img src="https://i.imgur.com/JQzzsHv_d.webp?maxwidth=760&fidelity=grand">
 
-<div style="font-size=20px;" id="demo"></div>
+<style>
+ p {
+Color:green;
+font-size:50px;
+  }
+</style>
+
+<p id="demo"></p>
 
 <script>
 // Set the date we're counting down to
@@ -29,7 +36,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "Bubatz sind Legal!";
   }
 }, 1000);
 </script>
